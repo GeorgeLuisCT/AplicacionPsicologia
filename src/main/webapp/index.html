@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <title>AppPsicologia</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+        <!-- MDB -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet">
+
+        <link href="public/css/style.css" rel="stylesheet">
+        <style>
+
+            h1{
+                font-weight: 900; /* Valor más alto para hacer la fuente más gruesa */
+                font-size: 3vw; /* Tamaño de fuente relativo al ancho de la pantalla */
+            }
+            main {
+                margin-top: 80px;
+            }
+
+            main .container-fluid {
+                background-image: url('public/images/fonndos/fondoprocipal.svg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .custom-box {
+                max-width: 400px;
+                /* Ancho máximo del cuadro */
+                margin: 0 auto;
+                /* Centrar horizontalmente el cuadro */
+                background-color: rgba(255, 255, 255, 0.5);
+                /* Color de fondo blanco con transparencia */
+                padding: 20px;
+                border-radius: 10px;
+                color: #4b392f;
+            }
+
+            .container-fluid {
+                position: relative;
+                overflow: hidden;
+                /* Evita las barras de desplazamiento */
+            }
+
+            .row {
+                z-index: 1;
+            }
+
+            .derecha{
+                background-color: #78c0e0 !important;
+            }
+
+            .hizquierda{
+                background-color: #449dd1 !important;
+            }
+
+            body, nav, small{
+                color: #0E0E52 !important;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp" class="me-2" height="20"
+                         alt="MDB Logo" loading="lazy">
+                    <small>App Psicologia </small>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                        data-mdb-target="#navbarRightAlignExample" aria-controls="navbarRightAlignExample" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h1 class="text-center">Psicologia</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Container wrapper -->
+            <div class="container-fluid">
+                <!-- Toggle button -->
+
+                <!-- Collapsible wrapper -->
+                <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+                    <!-- Left links -->
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#nosotros">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#mision">Misión</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#vision">Visión</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#presentacion">Presentación</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Collapsible wrapper -->
+            </div>
+            <!-- Container wrapper -->
+        </nav>
+
+        <main>
+            <div class="container-fluid h-100" id="inicio">
+                <div class="row h-100">
+                    <div class="col-lg-6 bg-primary hizquierda text-light d-flex align-items-center">
+                        <!-- Aquí va la imagen -->
+                        <img src="public/images/portada.jpeg" alt="Imagen" class="mx-auto img-fluid"
+                             style="border-radius: 50%; height: 50%;">
+                    </div>
+                    <div class="col-lg-6 derecha bg-light d-flex align-items-center">
+                        <!-- Aquí van los botones -->
+                        <div class="mx-auto">
+                            <button class=" btn-lg btn btn-primary" onclick="redirigirPsicologo()">Psicólogo</button>
+                            <button class="btn-lg btn btn-secondary" onclick="redirigirPaciente()">Paciente</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid h-100 d-flex align-items-center justify-content-center" id="nosotros">
+                <div class="row">
+                    <div class="col text-center custom-box">
+                        <h2>Sobre Nosotros</h2>
+                        <p>El centro de psicología nace con la idea de ser una consulta de psicología online para aquellas
+                            personas
+                            que asi lo deseen, buscando promover una sociedad con salud mental, de manera que se
+                            contribuye al bienestar general.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid h-100 d-flex align-items-center justify-content-center" id="mision">
+                <div class="row align-items-center">
+                    <div class="col text-center custom-box">
+                        <h2>Misión</h2>
+                        <p><b>Promover, generar y potenciar la salud, el bienestar y la positividad saludable en
+                                personas</b> (a lo largo de
+                            todo el ciclo vital: infancia, adolescencia, juventud, adultez y vejez)
+                            La recuperación, potenciación de la salud y el bienestar), a cualquier persona, pareja, familia,
+                            grupo u organización que quiera funcionar y ser saludablemente.
+                        </p>
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container-fluid h-100 d-flex align-items-center justify-content-center" id="vision">
+                <div class="row align-items-center">
+                    <div class="col text-center custom-box">
+                        <h2>Visión</h2>
+                        <p>Según la OMS, Organización Mundial de la Salud, «la salud no es solo la ausencia de enfermedad
+                            sino que debe darse un
+                            bienestar biológico, psicológico y social”. Constitución de la OMS, 1948. por lo cual Queremos
+                            satisfacer lo que nuestros
+                            pacientes nos solicitan siempre, bajo el marco de calidad, seguridad e integridad, así como
+                            crear valor a todos nuestros
+                            pacientes y personal interno; buscando un crecimiento continuo y sostenible bajo la óptica de la
+                            innovación constante.</p>
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid h-100 d-flex align-items-center justify-content-center" id="presentacion">
+                <div class="row align-items-center">
+                    <div class="col text-center custom-box">
+                        <h2>Presentación</h2>
+                        <p>El Centro de Psicología Avanzada se compromete a proporcionar servicios de terapia psicológica
+                            avanzada para pacientes con problemas de salud mental que no hayan podido resolverlo con otras
+                            psicoterapias y asesorías psicológicas.
+                            El enfoque está basado en la educación continua y constante, garantizando a nuestros pacientes
+                            la comprensión y
+                            puesta en marcha de nuestros tratamientos.</p>
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- MDB -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"></script>
+
+
+        <script src="javascript/index.js"></script>
+    </body>
+
+</html>

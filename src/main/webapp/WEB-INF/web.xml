@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <servlet>
+        <servlet-name>SolicitarCitaServlet</servlet-name>
+        <servlet-class>servlets.SolicitarCitaServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GuardarDatosServlet</servlet-name>
+        <servlet-class>servlets.GuardarDatosServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GuardarImagenServlet</servlet-name>
+        <servlet-class>servlets.GuardarImagenServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SolicitarCitaServlet</servlet-name>
+        <url-pattern>/SolicitarCitaServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GuardarDatosServlet</servlet-name>
+        <url-pattern>/GuardarDatosServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GuardarImagenServlet</servlet-name>
+        <url-pattern>/GuardarImagenServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
